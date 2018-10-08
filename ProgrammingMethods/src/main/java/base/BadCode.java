@@ -1,6 +1,6 @@
 package base;
 
-public class Mantra {
+public class BadCode {
 
 	public static String getMantra() {
 		Integer index;
