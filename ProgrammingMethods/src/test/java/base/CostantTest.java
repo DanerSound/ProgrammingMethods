@@ -7,21 +7,14 @@ import org.junit.Test;
 
 public class CostantTest {
 	
-	private Constant Cons;
-	
-	@Before
-	public void initConst() {
-		 Cons= new Constant();	
-	}
-	
 	@Test
 	public void positiveConst() {
-		assertEquals(1,Cons.evalutation());
+		assertEquals(1,Constant.evalutation());
 	}
 	
 	@Test
 	public void negativeConst() {
-		assertEquals(-1,Cons.evalutation());
+		assertEquals(-1,Constant.evalutation());
 	}
 
 }

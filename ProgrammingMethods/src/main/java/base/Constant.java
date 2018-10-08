@@ -1,11 +1,13 @@
 package base;
 
+
 public class Constant implements Exp{
 	
-	private int value=-1;
-
-	public int getValue() {
-		return value;
+	public int value;
+	
+	public Constant(int value) {
+		super();
+		this.value = value;
 	}
 
 	public void setValue(int value) {
@@ -13,6 +15,6 @@ public class Constant implements Exp{
 	}
 	
 	public int evalutation() {
-		return getValue();
+		return value;
 	}
 }
