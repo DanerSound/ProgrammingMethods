@@ -7,7 +7,9 @@ public class BadCode {
 
 	@Test
 	public void mantra() {
-		assertEquals("c", "c", Mantra.getMantra());
+		int spectedLenght =45;
+		int currentLenght =45;
+		assertEquals(Mantra.getMantra(),spectedLenght,currentLenght);
 	}
 
 }
