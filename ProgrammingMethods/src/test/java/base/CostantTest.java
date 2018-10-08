@@ -18,5 +18,10 @@ public class CostantTest {
 	public void positiveConst() {
 		assertEquals(1,Cons.evalutation());
 	}
+	
+	@Test
+	public void negativeConst() {
+		assertEquals(-1,Cons.evalutation());
+	}
 
 }

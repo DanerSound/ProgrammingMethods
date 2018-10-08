@@ -1,8 +1,8 @@
 package base;
 
-public class Constant{
+public class Constant implements Exp{
 	
-	private int value=1;
+	private int value=-1;
 
 	public int getValue() {
 		return value;
