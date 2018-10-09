@@ -1,7 +1,7 @@
 package base;
 
 
-public class Constant implements Exp{
+public class Constant {
 	
 	public int value;
 	
@@ -14,7 +14,7 @@ public class Constant implements Exp{
 		this.value = value;
 	}
 	
-	public int evalutation() {
+	public int getValue() {
 		return value;
 	}
 }
