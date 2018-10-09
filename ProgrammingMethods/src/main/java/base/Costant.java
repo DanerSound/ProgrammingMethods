@@ -1,11 +1,11 @@
 package base;
 
 
-public class Constant {
+public class Costant {
 	
 	public int value;
 	
-	public Constant(int value) {
+	public Costant(int value) {
 		super();
 		this.value = value;
 	}
