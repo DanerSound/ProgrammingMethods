@@ -1,7 +1,7 @@
 package base;
 
 
-public class Costant {
+public class Costant implements Exp {
 	
 	public int value;
 	
@@ -16,5 +16,9 @@ public class Costant {
 	
 	public int getValue() {
 		return value;
+	}
+
+	public int valutation() {
+		return getValue();
 	}
 }
