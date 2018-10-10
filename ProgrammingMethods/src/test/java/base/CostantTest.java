@@ -7,17 +7,17 @@ import org.junit.Test;
 
 public class CostantTest {
 	
-	
-	Constant cons;
+	Costant cons;
 	
 	@Before
 	public void initConst() {
-		cons= new Constant(cons.value);
+		cons= new Costant(0);
 	}
 	
 	@Test
 	public void returnValue() {
-		cons.getValue();
+		int testNumber=0;
+		assertEquals(cons.getValue(),testNumber);;
 	}
 	
 }
