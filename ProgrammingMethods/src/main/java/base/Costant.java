@@ -14,7 +14,7 @@ public class Costant {
 		this.value = value;
 	}
 	
-	public int getValue() {
+	public int getValutation() {
 		return value;
 	}
 }
