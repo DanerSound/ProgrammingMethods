@@ -15,7 +15,7 @@ public class ShapeTDDTest {
 	@Test
 	public void negativeParameterArea() {
 		int parameter=-4;
-		assertEquals(16,Square.AreaCalculator(parameter));
+		assertEquals(0,Square.AreaCalculator(parameter));
 	}
 
 }
