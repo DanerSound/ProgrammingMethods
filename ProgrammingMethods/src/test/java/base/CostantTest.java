@@ -16,8 +16,8 @@ public class CostantTest {
 	
 	@Test
 	public void returnValue() {
-		int testNumber=0;
-		assertEquals(cons.getValue(),testNumber);;
+		int expectedNumber=0;
+		assertEquals(expectedNumber,cons.getValutation());;
 	}
 	
 }
