@@ -6,7 +6,6 @@ public class BinaryExpression {
 	private int rightExpression;
 
 	public BinaryExpression(int leftExpression, int rightExpression) {
-		super();
 		this.leftExpression = leftExpression;
 		this.rightExpression = rightExpression;
 	}

@@ -6,7 +6,6 @@ public class Costant {
 	public int value;
 	
 	public Costant(int value) {
-		super();
 		this.value = value;
 	}
 
