@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 
-public class ShapeTDDTest {
+public class SquareTest {
 	
 	@Test
 	public void positiveParameterArea() {
