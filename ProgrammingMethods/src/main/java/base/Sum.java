@@ -1,11 +1,11 @@
 package base;
 
-public class BinaryExpression {
+public class Sum {
 
 	private int leftExpression;
 	private int rightExpression;
 
-	public BinaryExpression(int leftExpression, int rightExpression) {
+	public Sum(int leftExpression, int rightExpression) {
 		this.leftExpression = leftExpression;
 		this.rightExpression = rightExpression;
 	}
@@ -26,7 +26,7 @@ public class BinaryExpression {
 		this.rightExpression = rightExpression;
 	}
 
-	public static int getValutation(int currentLeft, int currentRight) {
+	public int getValutation(int currentLeft, int currentRight) {
 		return currentLeft + currentRight;
 	}
 
