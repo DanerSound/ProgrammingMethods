@@ -2,12 +2,14 @@ package fragileBase;
 
 public class BaseClass {
 	
-	public void doSomething() {
-		System.out.println(" i am a method from the base class");
+	private String name="Base";
+	
+	public void printClassName() {
+		System.out.println(" The base class name is "+getClassName());	
 	}
 	
-	public void doSomethingMore() {
-		System.out.println(" i am a second method from the base class");
+	public String getClassName() {
+		return name;
 	}
 
 }
