@@ -12,7 +12,7 @@ public class Base {
 		return testValue = operation2();
 
 	}
-
+	
 	public Boolean operation2() {
 		return testValue=false;
 	}
