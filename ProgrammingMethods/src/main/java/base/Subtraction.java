@@ -8,7 +8,7 @@ public class Subtraction extends BinaryExpression {
 
 	@Override
 	int getValutation() {
-		return getLeftExpression()-getRightExpression();
+		return leftExpression-rightExpression;
 	}
 
 }

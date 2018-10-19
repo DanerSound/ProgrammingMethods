@@ -8,7 +8,10 @@ public class Multipication extends BinaryExpression {
 
 	@Override
 	int getValutation() {
-		return leftExpression*rightExpression;
-	}
-
+		if((leftExpression==0)||(rightExpression==0))
+			return 0;
+		else {
+			return leftExpression*rightExpression;
+			}
+		}
 }
