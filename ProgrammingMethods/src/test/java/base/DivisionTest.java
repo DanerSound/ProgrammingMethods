@@ -16,9 +16,9 @@ public class DivisionTest {
 	@Test
 	public void divCorrectnessRightExpressionZero(){
 		BinaryExpression div = new Division(4,0);
-		assertEquals(0, div.getValutation());
+		assertEquals(0,div.getValutation());
 	}
-	
+
 	@Test
 	public void divCorrectnessleftExpressionZero() {
 		BinaryExpression div = new Division(0,4);

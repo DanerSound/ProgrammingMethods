@@ -8,11 +8,11 @@ public class Division extends BinaryExpression {
 
 	@Override
 	int getValutation() {
-		if(rightExpression==0) {
-			System.out.println("Math error : you can't devide by 0" );
-			return 0;
+		if((leftExpression == 0)&&(rightExpression == 0))  {
+			System.out.println("MATH ERROR : OPERATION NOT DEFINE");
 		}else{
-			if(leftExpression==0){
+			if(rightExpression==0){
+			System.out.println("MATH ERROR");
 			return 0;	
 			}
 		}
