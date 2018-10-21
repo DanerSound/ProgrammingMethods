@@ -23,6 +23,11 @@ public class DivisionTest {
 	public void divCorrectnessleftExpressionZero() {
 		BinaryExpression div = new Division(0,4);
 		assertEquals(0, div.getValutation());
-		
+	}
+	
+	@Test
+	public void divCorrecthnessleftExpressionZero() {
+		BinaryExpression div = new Division(0,0);
+		assertEquals(0, div.getValutation());
 	}
 }

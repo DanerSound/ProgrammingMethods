@@ -8,15 +8,13 @@ public class Division extends BinaryExpression {
 
 	@Override
 	int getValutation() {
-		if((leftExpression == 0)&&(rightExpression == 0))  {
-			System.out.println("MATH ERROR : OPERATION NOT DEFINE");
-		}else{
-			if(rightExpression==0){
-			System.out.println("MATH ERROR");
-			return 0;	
-			}
+		if ((leftExpression == 0) && (rightExpression == 0)) {
+			System.out.println("INPUT ERROR : YOU CANT DO THAT");
+		} else if (rightExpression == 0) {
+			System.out.println("MATH ERROR: CAN'T DO THAT");
+		} else {
+			return leftExpression / rightExpression;
 		}
-		return leftExpression/rightExpression;
+		return 0;
 	}
-
 }
