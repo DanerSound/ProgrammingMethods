@@ -10,7 +10,6 @@ public class FragileBaseTest {
 	public void operationCorrectness(){	
 			Base b = new Base(true);
 			assertFalse(b.operation1());
-	
 	}
 	
 
