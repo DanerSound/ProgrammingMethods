@@ -20,4 +20,5 @@ public class FactorialTest {
 	private void assertFactorial(int input, int expected) {
 		assertEquals(expected, Factorial.fact(input));
 	}
+	
 }
