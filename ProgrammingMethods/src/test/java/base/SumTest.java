@@ -10,5 +10,4 @@ public class SumTest {
 		BinaryExpression sum= new Sum(3, 5);
 		assertEquals(8, sum.getValutation());
 	}
-
 }

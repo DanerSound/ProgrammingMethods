@@ -10,5 +10,4 @@ public class Subtraction extends BinaryExpression {
 	int getValutation() {
 		return leftExpression-rightExpression;
 	}
-
 }

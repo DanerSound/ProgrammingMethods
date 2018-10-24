@@ -10,5 +10,4 @@ public class Sum extends BinaryExpression {
 	int getValutation() {	
 		return leftExpression+rightExpression;
 	}
-
 }

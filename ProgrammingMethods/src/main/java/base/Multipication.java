@@ -9,6 +9,5 @@ public class Multipication extends BinaryExpression {
 	@Override
 	int getValutation() {
 		return leftExpression * rightExpression;
-
 	}
 }

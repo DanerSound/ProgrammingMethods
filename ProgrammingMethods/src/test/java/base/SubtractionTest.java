@@ -11,5 +11,4 @@ public class SubtractionTest {
 		BinaryExpression sub = new Subtraction(6,5);
 		assertEquals(1, sub.getValutation());
 	}
-
 }

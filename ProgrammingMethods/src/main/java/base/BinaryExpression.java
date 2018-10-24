@@ -27,5 +27,4 @@ public abstract class BinaryExpression {
 	}
 
 	abstract int getValutation();
-
 }

@@ -26,7 +26,7 @@ public class DivisionTest {
 	}
 	
 	@Test
-	public void divCorrecthnessleftExpressionZero() {
+	public void divCorrectnesstExpressionZeroBoth() {
 		BinaryExpression div = new Division(0,0);
 		assertEquals(0, div.getValutation());
 	}

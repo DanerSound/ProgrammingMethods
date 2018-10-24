@@ -23,5 +23,4 @@ public class MultiplicationTest {
 		BinaryExpression mul = new Multipication(5,0);
 		assertEquals(0, mul.getValutation());
 	}
-
 }
