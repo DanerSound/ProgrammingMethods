@@ -11,6 +11,4 @@ public class FragileBaseTest {
 			Base b = new Base(true);
 			assertFalse(b.operation1());
 	}
-	
-
 }

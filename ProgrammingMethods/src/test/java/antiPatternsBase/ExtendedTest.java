@@ -6,7 +6,6 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 public class ExtendedTest {
-
 	@Test
 	public void setToFalse(){
 		Extended ex = new Extended(true);
@@ -19,5 +18,4 @@ public class ExtendedTest {
 		assertTrue(ex.Operation2());
 		
 	}
-	
 }
