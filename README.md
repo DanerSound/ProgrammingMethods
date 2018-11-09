@@ -2,13 +2,13 @@
 
 This Repo i'll contain all my exercises for this course following as much as possible the TDD approach .
 
-exercise 0 ["I'll not write bad code"](https://github.com/DanerSound/ProgrammingMethods/blob/master/ProgrammingMethods/src/main/java/base/BadCode.java) :  This exercise is a simple test of a method that control the correctness of an given String.
+exercise 0 ["I'll not write bad code"](https://github.com/DanerSound/ProgrammingMethods/blob/master/ProgrammingMethods/exercise%200/base/BadCode.java) :  This exercise is a simple test of a method that control the correctness of an given String.
 
 
 _You have to focues in that both Strings ( testString and returnedString )_ **must** _be the same_ .
  
  
- exercise 1 ["My expression analysis"](https://github.com/DanerSound/ProgrammingMethods/tree/myExpressionAnalysis) : This is an introduction exercise for the design pattern [Composite](https://en.wikipedia.org/wiki/Composite_pattern) :
+ exercise 1 ["My expression analysis"](https://github.com/DanerSound/ProgrammingMethods/tree/master/ProgrammingMethods/exercise%201%20:%20Expression/base) : This is an introduction exercise for the design pattern [Composite](https://en.wikipedia.org/wiki/Composite_pattern) :
  
  
  exercise 2 ["Shape TDD"](https://github.com/DanerSound/ProgrammingMethods/tree/ShapeTDD) : i try to implement a generic scheme to generate geometric figures
