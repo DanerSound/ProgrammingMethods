@@ -14,14 +14,14 @@ public abstract class BinaryExpression {
 		return leftExpression;
 	}
 
-	public void setLeftExpression(int leftExpression) {
-		this.leftExpression = leftExpression;
-	}
-
 	public int getRightExpression() {
 		return rightExpression;
 	}
-
+	
+	public void setLeftExpression(int leftExpression) {
+		this.leftExpression = leftExpression;
+	}
+	
 	public void setRightExpression(int rightExpression) {
 		this.rightExpression = rightExpression;
 	}
