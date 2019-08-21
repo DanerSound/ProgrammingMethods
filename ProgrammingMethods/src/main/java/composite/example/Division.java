@@ -1,4 +1,4 @@
-package base;
+package composite.example;
 
 public class Division extends BinaryExpression {
 
@@ -7,7 +7,7 @@ public class Division extends BinaryExpression {
 	}
 
 	@Override
-	int getValutation() {
+	public int getValutation() {
 		if ((leftExpression == 0) && (rightExpression == 0)) {
 			System.out.println("INPUT ERROR : YOU CANT DO THAT");
 		} else if (rightExpression == 0) {

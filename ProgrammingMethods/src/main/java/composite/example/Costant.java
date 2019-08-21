@@ -1,4 +1,4 @@
-package base;
+package composite.example;
 
 
 public class Costant {

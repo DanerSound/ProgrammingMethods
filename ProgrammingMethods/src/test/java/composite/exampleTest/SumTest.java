@@ -1,7 +1,10 @@
-package base;
+package composite.exampleTest;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+
+import composite.example.BinaryExpression;
+import composite.example.Sum;
 
 public class SumTest {
 

@@ -1,4 +1,4 @@
-package base;
+package composite.example;
 
 public class Sum extends BinaryExpression {
 
@@ -7,7 +7,7 @@ public class Sum extends BinaryExpression {
 	}
 
 	@Override
-	int getValutation() {	
+	public int getValutation() {	
 		return leftExpression+rightExpression;
 	}
 }
