@@ -1,4 +1,4 @@
-package designpatterns.AbstractFactory;
+package designpattern.AbstractFactory;
 
 public class GreenWindowMac extends GWindow {
 

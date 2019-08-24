@@ -1,4 +1,4 @@
-package designpatterns.TemplateMethod;
+package designpattern.TemplateMethod;
 
 public abstract class AlgorithmToDefine {
 

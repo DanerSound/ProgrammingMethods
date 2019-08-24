@@ -1,4 +1,4 @@
-package designpatterns.AbstractFactory;
+package designpattern.AbstractFactory;
 
 public abstract class GWindow {
 	public abstract void drawingGreenWindow();

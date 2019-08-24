@@ -1,4 +1,4 @@
-package designpatterns.AbstractFactory;
+package designpattern.AbstractFactory;
 
 public interface AbstractFactory {
 	public YWindow createYellowWindow();

@@ -1,4 +1,4 @@
-package designpatterns.TemplateMethod;
+package designpattern.TemplateMethod;
 
 public class ConcreteB extends AlgorithmToDefine{
 

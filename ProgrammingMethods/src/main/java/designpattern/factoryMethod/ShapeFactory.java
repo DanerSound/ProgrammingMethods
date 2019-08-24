@@ -1,4 +1,4 @@
-package designpatterns.factoryMethod;
+package designpattern.factoryMethod;
 
 public class ShapeFactory {
 
