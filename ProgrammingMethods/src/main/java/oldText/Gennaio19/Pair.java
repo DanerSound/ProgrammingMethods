@@ -8,6 +8,39 @@ public class Pair<T> {
 		this.snd = snd;
 	}
 
+//	public String whatIs() {
+//		String types = this.getClass().toString();
+//		T element = getFirst();
+//
+//		while (element.getClass().equals(this.getClass())) {
+//			// while(this.getFirst().getClass().equals(this.getClass())) {
+//			types += " " + this.getFirst().getClass().toString();
+//			element = (T) this.getFirst().getClass();
+//
+//		}
+//		Pair<T> element2 = (Pair<T>)element;
+//		Pair<T> node = element2;
+//		types +=" "+  node.getFirst().getClass().toString() + node.getSnd().getClass().toString();
+//		
+//		return types;
+//	}
+
+	public String whatIs(Pair<T> elem) {
+		String node = elem.getClass().toString();
+		T support = getFirst();
+		//if (node.getClass().equals(elem.getClass())) {
+		if(elem.getClass().equals(elem.getFirst().getClass())) {
+			String subElem = support.getClass().toString();
+			node = node + " "+  subElem;
+			Pair<T> subFirst = (Pair<T>)this.getFirst();
+			node += " "+ whatIs(subFirst);
+
+		} else {
+			node +=" "+getFirst().getClass().toString() + getSnd().getClass().toString();
+		}
+		return node;
+	}
+
 	public Pair<T> getPair() {
 		return this;
 	}
@@ -26,13 +59,6 @@ public class Pair<T> {
 
 	public void setSnd(T snd) {
 		this.snd = snd;
-	}
-
-	public void whatIs() {
-		System.out.println(getFirst() + " " + getSnd());
-		if (getFirst().getClass().equals(Pair.class)) {
-			Pair<T> elem = th
-		}
 	}
 
 }
