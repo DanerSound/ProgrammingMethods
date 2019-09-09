@@ -1,7 +1,9 @@
 package oldText.Novembre18PI;
 
-public interface Element {
+public interface Item {
 	
 	public void accept(Visitor v);
+	
+	public boolean itemEquals(Object obj);
 
 }

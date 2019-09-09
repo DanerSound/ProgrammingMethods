@@ -4,11 +4,11 @@ public class ItemResetDEMO {
 
 	public static void main(String[] args) {
 
-		Element number = new Number("DIO", 42);
+		Item number = new Number("DIO", 42);
 
-		Element text = new Text(0, "porco");
+		Item text = new Text(0, "porco");
 
-		Element item = new Twice(number, text);
+		Item item = new Twice(number, text);
 
 		RebootVisitor reset = new RebootVisitor();
 
@@ -17,6 +17,10 @@ public class ItemResetDEMO {
 		text.accept(reset);
 
 		item.accept(reset);
+		
+		System.out.println(item.itemEquals(item));
+		System.out.println(number.itemEquals(text));
+		System.out.println(text.itemEquals(text));
 
 	}
 

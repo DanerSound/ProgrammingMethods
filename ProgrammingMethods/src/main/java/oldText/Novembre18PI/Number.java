@@ -1,6 +1,6 @@
 package oldText.Novembre18PI;
 
-public class Number implements Element {
+public class Number implements Item {
 
 	private String name;
 	private int value;
@@ -13,6 +13,17 @@ public class Number implements Element {
 	@Override
 	public void accept(Visitor v) {
 		v.resetNumber(this);
+	}
+	
+	@Override
+	public boolean itemEquals(Object obj) {
+		Number current = (Number) obj;
+
+		if (value == current.value) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public String getName() {
@@ -30,5 +41,7 @@ public class Number implements Element {
 	public void setValue(int value) {
 		this.value = value;
 	}
+
+
 
 }

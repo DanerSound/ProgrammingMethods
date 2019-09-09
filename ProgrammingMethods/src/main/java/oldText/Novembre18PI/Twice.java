@@ -1,11 +1,11 @@
 package oldText.Novembre18PI;
 
-public class Twice implements Element {
+public class Twice implements Item {
 
-	private Element first;
-	private Element snd;
+	private Item first;
+	private Item snd;
 
-	public Twice(Element first, Element snd) {
+	public Twice(Item first, Item snd) {
 		this.first = first;
 		this.snd = snd;
 	}
@@ -16,19 +16,31 @@ public class Twice implements Element {
 
 	}
 
-	public Element getFirst() {
+	@Override
+	public boolean itemEquals(Object obj) {
+		Twice current = (Twice) obj;
+
+		if ((first == current.first) && (snd == current.snd)) {
+			return true;
+		} else {
+			return false;
+		}
+
+	}
+
+	public Item getFirst() {
 		return first;
 	}
 
-	public void setFirst(Element first) {
+	public void setFirst(Item first) {
 		this.first = first;
 	}
 
-	public Element getSnd() {
+	public Item getSnd() {
 		return snd;
 	}
 
-	public void setSnd(Element snd) {
+	public void setSnd(Item snd) {
 		this.snd = snd;
 	}
 

@@ -1,6 +1,6 @@
 package oldText.Novembre18PI;
 
-public class Text implements Element {
+public class Text implements Item {
 
 	private int Id;
 	private String content;
@@ -14,6 +14,17 @@ public class Text implements Element {
 	public void accept(Visitor v) {
 		v.resetText(this);
 
+	}
+	
+	@Override
+	public boolean itemEquals(Object obj) {
+		Text current = (Text) obj;
+		
+		if (content== current.content) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public int getId() {
@@ -31,5 +42,7 @@ public class Text implements Element {
 	public void setContent(String content) {
 		this.content = content;
 	}
+
+
 
 }
