@@ -11,6 +11,8 @@ public abstract class Pair<T> {
 
 	public abstract String whatIs();
 	
+	public abstract void acceptVisitor( PairVisitor visitor);
+	
 	@Override
 	public String toString() {
 		return first.getClass().toString()+ "  " + snd.getClass().toString();

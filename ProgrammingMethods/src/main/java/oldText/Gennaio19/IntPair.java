@@ -11,4 +11,10 @@ public class IntPair<T> extends Pair<T> {
 		return this.toString();
 	}
 
+	@Override
+	public void acceptVisitor(PairVisitor visitor) {
+		visitor.visitIntPair(this);
+		
+	}
+
 }
