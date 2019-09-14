@@ -1,20 +1,42 @@
 package oldText.Gennaio19;
 
-public class DoublePair<T extends Pair<?>> extends Pair<T> {
+public class DoublePair extends Pair{
+	
+	private Pair first,snd;
 
-	public DoublePair(T first, T snd) {
-		super(first, snd);
+	public DoublePair(Pair first, Pair snd) {
+		this.first = first;
+		this.snd = snd;
 	}
-
+	
 	@Override
 	public String whatIs() {
-		return this.toString();
+		return first.getClass().toString() + " " + snd.getClass().toString();
+
 	}
 
 	@Override
-	public void acceptVisitor(PairVisitor visitor) {
-		visitor.visitDoublePair(this);
-
+	public void acceptVisitor(Visitor v) {
+		// TODO Auto-generated method stub
+		
 	}
+
+	public Pair getFirst() {
+		return first;
+	}
+
+	public void setFirst(Pair first) {
+		this.first = first;
+	}
+
+	public Pair getSnd() {
+		return snd;
+	}
+
+	public void setSnd(Pair snd) {
+		this.snd = snd;
+	}
+
+
 
 }
