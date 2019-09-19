@@ -10,7 +10,7 @@ public class ItemResetDEMO {
 
 		Item item = new Twice(number, text);
 
-		RebootVisitor reset = new RebootVisitor();
+		RebootVisitor reset = new RebootVisitor("DIO");
 
 		number.accept(reset);
 
@@ -18,9 +18,9 @@ public class ItemResetDEMO {
 
 		item.accept(reset);
 		
-		System.out.println(item.itemEquals(item));
-		System.out.println(number.itemEquals(text));
-		System.out.println(text.itemEquals(text));
+		System.out.println(item.equals(item));
+		System.out.println(number.equals(text));
+		System.out.println(text.equals(text));
 
 	}
 

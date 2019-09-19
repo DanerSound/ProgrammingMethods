@@ -11,20 +11,19 @@ public class Text implements Item {
 	}
 
 	@Override
-	public void accept(Visitor v) {
-		v.resetText(this);
+	public void accept(RebootVisitor v) {
+		v.visit(this);
 
 	}
 	
 	@Override
-	public boolean itemEquals(Object obj) {
-		Text current = (Text) obj;
+	public boolean equals(Object obj) {
 		
-		if (content== current.content) {
-			return true;
-		} else {
+//		if (content== ((Text)obj).content) {
+//			return true;
+//		} else {
 			return false;
-		}
+//		}
 	}
 
 	public int getId() {

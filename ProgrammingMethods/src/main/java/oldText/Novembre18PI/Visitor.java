@@ -2,11 +2,10 @@ package oldText.Novembre18PI;
 
 public abstract class Visitor {
 
-	
-	abstract void resetNumber(Item Item);
+	abstract void visit(Number number);
 
-	abstract void resetText(Item Item);
+	abstract void visit(Text text);
 
-	abstract void resetTwice(Item Item);
+	abstract void visit(Twice twice);
 
 }

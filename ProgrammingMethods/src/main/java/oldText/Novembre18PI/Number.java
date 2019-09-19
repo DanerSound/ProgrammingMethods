@@ -11,19 +11,18 @@ public class Number implements Item {
 	}
 
 	@Override
-	public void accept(Visitor v) {
-		v.resetNumber(this);
+	public void accept(RebootVisitor v) {
+		v.visit(this);
 	}
 	
 	@Override
-	public boolean itemEquals(Object obj) {
-		Number current = (Number) obj;
-
-		if (value == current.value) {
-			return true;
-		} else {
+	public boolean equals(Object obj) {
+		
+//		if (value == ((Number)obj).value) {
+//			return true;
+//		} else {
 			return false;
-		}
+//		}
 	}
 
 	public String getName() {

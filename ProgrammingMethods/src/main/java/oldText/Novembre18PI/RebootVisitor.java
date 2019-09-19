@@ -2,21 +2,36 @@ package oldText.Novembre18PI;
 
 public class RebootVisitor extends Visitor {
 
+	private String restString;
+
+	public RebootVisitor(String restString) {
+		this.restString = restString;
+	}
+
+//	private void reset(String r) {
+//		if (r == restString) {
+//
+//		}
+//
+//	}
+
 	@Override
-	public void resetNumber(Item item) {
-		System.out.println(" HO VISITATO UN NUMBER");
+	void visit(Number number) {
+		if (number.getName() == restString) {
+			number.setValue(0);
+		}
 
 	}
 
 	@Override
-	public void resetText(Item item) {
-		System.out.println(" HO VISITATO UN TEXT ");
+	void visit(Text text) {
+		System.out.println("Non ci sono numeri da azzerare");
 
 	}
 
 	@Override
-	public void resetTwice(Item item) {
-		System.out.println(" HO VISITATO UN TWICE ");
+	void visit(Twice twice) {
+		// TODO : do somthing
 
 	}
 

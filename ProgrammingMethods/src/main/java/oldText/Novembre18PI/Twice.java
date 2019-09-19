@@ -11,13 +11,13 @@ public class Twice implements Item {
 	}
 
 	@Override
-	public void accept(Visitor v) {
-		v.resetTwice(this);
+	public void accept(RebootVisitor v) {
+		v.visit(this);
 
 	}
 
 	@Override
-	public boolean itemEquals(Object obj) {
+	public boolean equals(Object obj) {
 		Twice current = (Twice) obj;
 
 		if ((first == current.first) && (snd == current.snd)) {

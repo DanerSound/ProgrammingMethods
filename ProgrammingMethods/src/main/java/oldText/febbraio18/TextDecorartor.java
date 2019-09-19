@@ -16,12 +16,4 @@ public class TextDecorartor extends WidgetDecorartor {
 		System.out.println("Text: Ciao il testo si è ridotto di " + newHeight);
 	}
 
-	public int getNewHeight() {
-		return newHeight;
-	}
-
-	public void setNewHeight(int newHeight) {
-		this.newHeight = newHeight;
-	}
-
 }

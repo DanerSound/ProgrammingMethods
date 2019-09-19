@@ -1,9 +1,9 @@
 package oldText.Novembre18PI;
 
-public abstract class Item {
+public interface Item {
 
-	public void accept(Visitor v);
+	public void accept(RebootVisitor v);
 
-	public boolean itemEquals(Object obj);
+	public boolean equals(Object obj);
 
 }
