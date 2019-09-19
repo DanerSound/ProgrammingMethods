@@ -1,10 +1,11 @@
 package oldText.Gennaio19;
 
-public interface Visitor {
+public abstract class Visitor {
 
-	public boolean checkOrdInt();
+	public abstract boolean visit(IntPair i);
 
-	public boolean checkOrdStr();
+	public abstract boolean visit(StrPair s);
 
-	public boolean checkOrdDouble();
+	public abstract boolean visit(DoublePair d);
+
 }

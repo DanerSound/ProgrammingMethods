@@ -1,7 +1,15 @@
 package oldText.Luglio19;
 
-public interface FlightAlert {
+public abstract class FlightAlert {
 
-	public void updateState(String flightId, String newstate,int newGate);
+	public abstract void update(Flight f);
+	
+	public void add(Flight f) {
+		f.attach(this);
+	}
+	
+	public void remove(Flight f) {
+		f.remove(this);
+	}
 
 }

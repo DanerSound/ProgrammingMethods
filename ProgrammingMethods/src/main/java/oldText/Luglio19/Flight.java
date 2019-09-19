@@ -1,50 +1,77 @@
 package oldText.Luglio19;
 
-public class Flight extends AbstractSubj<FlightAlert> {
+import java.util.ArrayList;
+
+public class Flight {
 
 	private String id;
-	private int gate;
 	private String state;
+	private int gate;
+	private ArrayList<FlightAlert> obs;
 
-	public Flight(String id, int gate, String state) {
+	public Flight(String id, String state, int gate) {
+		super();
 		this.id = id;
-		this.gate = gate;
 		this.state = state;
+		this.gate = gate;
+		this.obs = new ArrayList<>();
 	}
 
-	@Override
-	public void notifyState(String flightId, String state, int gate) {
-		for (int index = 0; index < getFlightList().size(); index++) {
-			getFlightList().get(index).updateState(flightId, state, gate);
+	public void attach(FlightAlert f) {
+		obs.add(f);
+	}
+
+	public void remove(FlightAlert f) {
+		obs.remove(f);
+	}
+
+	public void updateState(String newState) {
+		setState(newState);
+		notifyObservers();
+	}
+
+	public void updateGate(int newGate) {
+		setGate(newGate);
+		notifyObservers();
+	}
+
+	public void notifyObservers() {
+		for (int index = 0; index < obs.size(); index++) {
+			obs.get(index).update(this);
 		}
+
+	}
+
+	public String getId() {
+		return id;
 	}
 
 	public void setId(String id) {
 		this.id = id;
 	}
 
-	public void setState(String newState) {
-		this.state = newState;
-		notifyState(id, newState, gate);
-
-	}
-
-	public void setGate(int newGate) {
-		this.gate = newGate;
-		notifyState(id, state, newGate);
-
-	}
-
 	public String getState() {
 		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
 	}
 
 	public int getGate() {
 		return gate;
 	}
 
-	public String getId() {
-		return id;
+	public void setGate(int gate) {
+		this.gate = gate;
+	}
+
+	public ArrayList<FlightAlert> getObs() {
+		return obs;
+	}
+
+	public void setObs(ArrayList<FlightAlert> obs) {
+		this.obs = obs;
 	}
 
 }

@@ -6,20 +6,15 @@ public class DEMOPair {
 		
 		IntPair intp = new IntPair(1, 2);
 		
-		StrPair strp = new StrPair("HOLA","CIAO");
+		StrPair strp = new StrPair("HOLAA","CIAO");
 		
 		DoublePair doublep = new DoublePair(intp, strp);
 		
-		Visitor vi = new VisitorInPair(intp);
+		Visitor vi = new OrderVisitor();
 		
-		vi.checkOrdInt();
-		
-		Visitor vs = new VisitorStrPair(strp);
-		vs.checkOrdStr();
-		
-		Visitor vd = new VisitorDoublePair(doublep);
-		vd.checkOrdDouble();		
-		
+		vi.visit(intp);
+		vi.visit(strp);
+		vi.visit(doublep);
 
 	}
 

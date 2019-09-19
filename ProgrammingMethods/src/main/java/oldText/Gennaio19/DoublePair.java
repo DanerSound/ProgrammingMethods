@@ -17,7 +17,7 @@ public class DoublePair extends Pair{
 
 	@Override
 	public void acceptVisitor(Visitor v) {
-		// TODO Auto-generated method stub
+		v.visit(this);
 		
 	}
 
