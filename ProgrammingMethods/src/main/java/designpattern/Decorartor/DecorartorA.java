@@ -10,6 +10,7 @@ public class DecorartorA extends Decorartor{
 	@Override
 	public void draw() {
 		super.draw();
+		
 		System.out.println("this is DECA i add this print");
 		
 	}
